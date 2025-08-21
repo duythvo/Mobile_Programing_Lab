@@ -1,10 +1,10 @@
 export class Book{
-    tile: string;
+    title: string;
     author: string;
     year: number;
 
     constructor(title: string, author:string, year: number){
-        this.tile = title;
+        this.title = title;
         this.author = author;
         this.year = year;
     }

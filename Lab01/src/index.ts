@@ -10,6 +10,8 @@ import { Cat, Dog } from "./bai11";
 import { Birds, Fish } from "./bai12";
 import { Square, Cricle } from "./bai13";
 import { Manager, Developer } from "./bai14";
+import { Library } from "./bai15";
+import { Book } from "./bai6";
 
 //Bai01
 var person = new Person("Duy", 21);
@@ -85,11 +87,17 @@ var bankAccount = new BankAccount(100);
 
 //Bai 14
 
-var manager = new Manager("Duy", "Admin")
-var developer = new Developer("Duy", "Java")
+// var manager = new Manager("Duy", "Admin")
+// var developer = new Developer("Duy", "Java")
 
-manager.displayInfo()
-manager.manageTask()
+// manager.displayInfo()
+// manager.manageTask()
 
-developer.displayInfo()
-developer.code()
+// developer.displayInfo()
+// developer.code()
+
+//bai 15
+var book = new Book("abc", "abc", 1999)
+var library = new Library();
+library.addBook(book)
+console.log();

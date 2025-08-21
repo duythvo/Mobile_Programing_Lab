@@ -1,6 +1,6 @@
 import { Book } from "./bai6";
 import { User } from "./bai7";
-class Library{
+export class Library{
     books : Book[] = [];
     users : User[] = [];
 
@@ -12,5 +12,13 @@ class Library{
     public addUser(user: User): void{
         this.users.push(user);
         console.log("Add user successfully");
+    }
+
+    public getUser(){
+        return this.users;
+    }
+
+    public getBook(){
+        return this.books;
     }
 }
