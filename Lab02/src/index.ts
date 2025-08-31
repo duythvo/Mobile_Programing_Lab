@@ -5,6 +5,18 @@ import { RandomPromise } from "./bai04";
 import { simulateTask } from "./bai05";
 import { filterEvens } from "./bai09";
 import { Bai10 } from "./bai10";
+import { HelloAsync2 } from "./bai11";
+import { Bai14 } from "./bai14";
+import { bai21 } from "./bai21";
+import { bai22 } from "./bai22";
+import { bai23 } from "./bai23";
+import { bai24 } from "./bai24";
+import { bai25 } from "./bai25";
+import { bai26 } from "./bai26";
+import { bai27 } from "./bai27";
+import { bai28 } from "./bai28";
+import { bai29 } from "./bai29";
+import { bai30 } from "./bai30";
 
 //Bai 01
 // HelloAsync.then((value) => {
@@ -97,13 +109,74 @@ import { Bai10 } from "./bai10";
 //   });
 
 //Bai 10
-Bai10(false)
-  .then((value) => {
-    console.log(value);
-  })
-  .catch((err) => {
-    console.error(err);
-  })
-  .finally(() => {
-    console.log("Done");
-  });
+// Bai10(false)
+//   .then((value) => {
+//     console.log(value);
+//   })
+//   .catch((err) => {
+//     console.error(err);
+//   })
+//   .finally(() => {
+//     console.log("Done");
+//   });
+
+// Bai 11
+// const main = async () => {
+//   try {
+//     const msg = await HelloAsync2();
+//     console.log(msg);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
+
+// main()
+
+//bai 14
+
+// (async () => {
+//   const result = await Bai14(5);
+//   console.log("Bai14 result:", result);
+// })();
+
+//bai 21
+
+const main = async () => {
+  console.log("Bai 21");
+  await bai21();
+
+  console.log("Bai 22");
+  await bai22();
+
+  console.log("Bai 23");
+  const completed = await bai23();
+  console.log("Completed todos count:", completed.length);
+
+  console.log("Bai 24");
+  await bai24();
+
+  console.log("Bai 25");
+  await bai25("example.txt");
+
+  console.log("Bai 26");
+  await bai26();
+
+  console.log("Bai 27");
+  try {
+    const data = await bai27("https://jsonplaceholder.typicode.com/todos/3", 3);
+    console.log("Retry fetch result:", data);
+  } catch (err) {
+    console.error("Retry failed:", err);
+  }
+
+  console.log("Bai 28");
+  await bai28();
+
+  console.log("Bai 29");
+  await bai29();
+  
+  console.log("Bai 30");
+  await bai30();
+};
+
+main().catch((err) => console.error("Unexpected error:", err));
