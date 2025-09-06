@@ -79,7 +79,7 @@ import { bai30 } from "./bai30";
 //   console.log(value);
 // });
 
-//Bai 08
+// //Bai 08
 // const promise = Promise.resolve(10);
 
 // promise
@@ -174,7 +174,7 @@ const main = async () => {
 
   console.log("Bai 29");
   await bai29();
-  
+
   console.log("Bai 30");
   await bai30();
 };

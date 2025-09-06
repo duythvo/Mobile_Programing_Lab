@@ -28,25 +28,28 @@ import { Car2, Movable, Robot } from "./bai29";
 
 //Bai01
 var person = new Person("Duy", 21);
-// console.log(person);
+//console.log(person);
 
 //Bai02
 var student = new Student("Duy", 12, 12)
-// console.log(student)
+//console.log(student)
 
-//Bai03
-var car = new Car("hi", "hi", 1999)
+// //Bai03
+// console.log("Bai 03")
+// var car = new Car("hi", "hi", 1999)
 // console.log(car)
 
 
-//Bai04
-var rectangle = new Rectangle(2, 3)
+// //Bai04
+// console.log("Bai 04")
+// var rectangle = new Rectangle(2, 3)
 // console.log(rectangle.area())
 // console.log(rectangle.perimeter())
 
 
-//Bai05
-var bankAccount = new BankAccount(100);
+// //Bai05
+// console.log("Bai 05")
+// var bankAccount = new BankAccount(100);
 
 // console.log(bankAccount.balance)
 // bankAccount.deposit(1)
@@ -204,25 +207,28 @@ var bankAccount = new BankAccount(100);
 // Shape1.describe();
 
 //Bai 26
-
-// const order = new Order([new Product("Laptop", 10.5), new Product("Car", 1.2)]);
-// console.log("Total price:", order.calculateTotalPrice());
+console.log("Bai 26")
+const order = new Order([new Product("Laptop", 10.5), new Product("Car", 1.2)]);
+console.log("Total price:", order.calculateTotalPrice());
 
 //Bai 27
-// const teacher = new Teacher("Thai Duy", 20, "Software Engineering");
-// teacher.introduce();
+console.log("Bai 27")
+const teacher = new Teacher("Thai Duy", 20, "Software Engineering");
+teacher.introduce();
 
 //Bai 29 
-// const car2: Movable = new Car2();
-// car2.move();
+console.log("Bai 29")
+const car2: Movable = new Car2();
+car2.move();
 
-// const robot: Movable = new Robot();
-// robot.move();
+const robot: Movable = new Robot();
+robot.move();
 
 //Bai 30 
 // Test
+console.log("Bai 30")
 const s1 = new st("Duy", 21);
-const s2 = new st("Vy", 21);
+const s2 = new st("Tram", 19);
 
 const t1 = new Teacher("Hi", 35, "HUUU");
 const t2 = new Teacher("Ha", 40, "HAAHA");

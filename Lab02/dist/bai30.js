@@ -5,7 +5,7 @@ const bai30 = async () => {
     const urls = [
         "https://jsonplaceholder.typicode.com/todos/1",
         "https://jsonplaceholder.typicode.com/todos/2",
-        "https://invalid.url", // simulate failure
+        "https://invalid.url",
     ];
     const results = await Promise.allSettled(urls.map((u) => fetch(u).then((res) => res.json())));
     results.forEach((res, i) => {

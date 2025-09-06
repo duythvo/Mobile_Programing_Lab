@@ -61,7 +61,7 @@ const bai30_1 = require("./bai30");
 // Promise.race([promise4, promise5]).then((value) => {
 //   console.log(value);
 // });
-//Bai 08
+// //Bai 08
 // const promise = Promise.resolve(10);
 // promise
 //   .then((num) => {
