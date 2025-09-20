@@ -8,6 +8,8 @@ import Bottem from './components/Bottem';
 import Bai01 from './components/Bai01';
 import Bai02 from './components/Bai02';
 import Bai03 from './components/Bai03';
+import Bai04 from './components/Bai04';
+import Bai05 from './components/Bai05';
 
 const products = [
   {
@@ -180,7 +182,7 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Top />
-      <Bai03 />
+      <Bai04 />
       <Bottem />
     </SafeAreaView>
   );
@@ -189,7 +191,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     backgroundColor: '#ecf0f1',
     padding: 8,
   },

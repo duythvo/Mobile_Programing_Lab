@@ -1,5 +1,5 @@
 import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
-const Card = ({ item }) => {
+const Card03 = ({ item }) => {
   return (
     <View style={styles.backGround}>
       <Image style={styles.image} source={{uri: item.image}} />
@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Card;
+export default Card03;
